@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - 2.5
+  - 2.6
+  - 2.7
+  - 3.2
+  - pypy
+
+script:
+  - pip install -e .
+  - python spec/callable_support_spec.py
+  - python spec/callback_order_spec.py
+  - python spec/configuration_spec.py
+  - python spec/event_parameters_spec.py
+  - python spec/event_spec.py
+  - python spec/guard_spec.py
+  - python spec/individuation_spec.py
+  - python spec/one_event_multiple_transitions_spec.py
+  - python spec/state_action_spec.py
+  - python spec/state_spec.py
+  - python spec/transition_action_spec.py
+  - python spec/boolean_state_getters_spec.py
